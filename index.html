@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alejandro Sánchez</title>
+    <link rel="icon " href="/img/logo1.jpg" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Krub"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.0/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Krub:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/circle-progress.js"></script>
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <a href="#">Inicio</a>
+        <a href="#about">Sobre Mi</a>
+        <a href="#">C.V.</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+    <div class="hero">
+      <div class="contenido-hero">
+        <h1>Alejandro Sánchez López</h1>
+        <p><i class="fas fa-code"></i> Desarrollador Front - End</p>
+
+        <a class="boton" href="#contacto">Contactar</a>
+      </div>
+    </div>
+
+    <div class="contenedor">
+      <h2>Sobre mi</h2>
+      <div id="about" class="about">
+        <div class="pa-principal">
+          <p>
+            Hola, mi nombre es Alejandro Sánchez tengo 24 años y soy de la CDMX.
+          </p>
+          <p>
+            Actualmente me encuentro estudiando Ingeniería en Software y redes.
+            La programación siempre ha sido una de mis pasiones desde una edad
+            muy temprana, hasta hace unos años empecé a utilizarlo como forma de
+            vida y de forma laboral. Estoy en constante estudio de lenguajes de
+            programación como lo son: Javascript, TypeScript y Python. Así como
+            tecnologías Front – End. Actualmente me encuentro en capacitación
+            continua del Framework Angular. Quiero desenvolver mi carrera
+            principalmente en el ámbito de Desarrollo Front – End y en un futuro
+            meterme más a fondo en Ciencia de Datos.
+          </p>
+          <p>
+            ¡Te invito a consultar mi perfil en Linkedin y mi repositorio en
+            GitHub!
+          </p>
+        </div>
+        <div class="profile">
+          <img src="/img/profile2.jpg" alt="Alejandro" />
+        </div>
+        <div class="social-icon">
+          <a href="https://linkedin.com/in/alejandroslpz/""
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/alejandroslpz"
+            ><i class="fab fa-github-square"></i
+          ></a>
+          <a href="https://twitter.com/alee_slpz"
+            ><i class="fab fa-twitter-square"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contenedor">
+      <main class="servicios">
+        <h2>Conocimientos</h2>
+        <div class="servicios-contenedor">
+          <div class="servicio">
+            <h3>Desarrollo Web</h3>
+            <div class="iconos">
+              <i class="fab fa-css3"></i>
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-js-square"></i>
+            </div>
+            <p>
+              Desarrollo web Front - End con: Angular, TypeScript, Javascript,
+              jQuery, CSS3, HTML5, AJAX, JSON Y Web Responsise.
+            </p>
+          </div>
+          <div class="servicio">
+            <h3>Lenguajes de Programación</h3>
+            <div class="iconos">
+              <i class="fab fa-js-square"></i>
+              <i class="fab fa-python"></i>
+            </div>
+            <p>
+              Mis conocimientos son en: Javascript y TypeScript. Tengo noción de Python para en un futuro no muy lejano involucrarme en Back – End.
+            </p>
+            <div class="progress">
+              <i class="fab fa-js-square"></i>
+              <div class="js circle">
+                <strong></strong>
+              </div>
+              <i class="fab fa-python"></i>
+              <div class="py circle">
+                <strong></strong>
+              </div>
+            </div>
+          </div>
+          <div class="servicio">
+            <h3>Bases de datos</h3>
+            <div class="iconos">
+              <i class="fas fa-database"></i>
+            </div>
+            <p>
+              Mis conocimientos en base de datos principalmente se basan en: MongoDB, Mysql y SQLServer.
+            </p>
+          </div>
+        </div>
+        <!--.servicios-->
+      </main>
+
+      <div id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <form action="/submit.php" method="POST">
+          <legend>Contáctame llenando todos los campos</legend>
+
+          <div class="contenedor-campos">
+            <div class="campo">
+              <label>Nombre:</label>
+
+              <input type="text" name="nombre" placeholder="Nombre" id="nombre" required/>
+            </div>
+            <div class="campo">
+              <label>Teléfono:</label>
+
+              <input type="tel" name="telefono" placeholder="Teléfono" id="tel"/>
+            </div>
+            <div class="campo w-100">
+              <label>Correo:</label>
+
+              <input type="email" name="correo" placeholder="Mail" id="mail" required/>
+            </div>
+            <div class="campo w-100">
+              <label>Mensaje:</label>
+
+              <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+          </div>
+          <!--.contenedor-campos-->
+          <div class="enviar">
+            <input id= "enviar" class="boton" type="submit" value="Enviar" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="social-icon">
+        <a href="https://linkedin.com/in/alejandroslpz/"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/alejandroslpz"
+          ><i class="fab fa-github-square"></i
+        ></a>
+        <a href="https://twitter.com/alee_slpz"
+          ><i class="fab fa-twitter-square"></i
+        ></a>
+      </div>
+      <div class="copy">
+        Creado por Alejandro Sánchez &copy; 2020
+      </div>
+    </footer>
+  </body>
+</html>
